@@ -140,3 +140,13 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-img{
+        width: 100%;
+    }
+}
