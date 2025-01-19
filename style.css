@@ -228,6 +228,11 @@
     align-items: center;
     gap:80px;
 }
+.feature-products-img{
+    width:100%;
+    
+}
+
 
 .feature-products-content{
     max-width: 650px;
@@ -361,9 +366,7 @@
     .feature-products-content{
        text-align: center;
     }
-    .feature-products-img{
-        width:80%;
-    }
+    
 }
 
 /* media query for medium devices*/
