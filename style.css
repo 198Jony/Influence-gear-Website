@@ -115,6 +115,9 @@
     justify-content: space-evenly;
 }
 
+
+
+
 /* Card section style */
 
 .card{
@@ -336,13 +339,16 @@
         width: 100%;
     }
     .sponsors{
-       flex-direction: column;
-       row-gap: 50px;
-       
+       flex-flow: row wrap;
+       justify-content: space-around;
+       column-gap: 10px;
+       row-gap: 20px;
+       flex: 1;
+      
     }
-    .sponsors-img{
-        width: 100%;
-        
+    
+    .flex-basis{
+        flex-basis: 10%;
     }
     .card-content{
         
@@ -391,7 +397,17 @@
        
     
     }
-   
+    .sponsors{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        column-gap: 25px;
+        row-gap: 20px;
+       
+     }
+     
+     .flex-basis{
+         flex-basis: 20%;
+     }
     .cards img{
         width: 100%;
     }
