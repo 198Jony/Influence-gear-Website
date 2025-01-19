@@ -112,6 +112,86 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+/* Card section style */
+
+.card{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.card-title{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0px;
+    margin-top: 100px;
+    
+}
+.card-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-top: 30px;
+
+}
+
+.cards{
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+.cards-title{
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin-top: 15px;
+    
+}
+
+.cards-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+   
+}
+.cards-rating{
+    color: rgb(94, 99, 102);
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    margin-left: 10px;
+    
+}
+
+.cards-description{
+    max-width: 196px;
+    color: rgb(120, 120, 133);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+   
+}
+.checked,.fa{
+    color: orange;
+
+}
 /* Responsive Media Query */
 
 /* media query for small devices*/
@@ -139,6 +219,15 @@
         width: 100%;
         
     }
+    .card-content{
+        
+        grid-template-columns: repeat(1,1fr);
+       
+    
+    }
+    .cards img{
+        width: 100%;
+    }
 }
 
 /* media query for medium devices*/
@@ -157,6 +246,16 @@
     .banner-img{
         width: 100%;
     }
+    .card-content{
+        
+        grid-template-columns: repeat(2,1fr);
+       
+    
+    }
+   
+    .cards img{
+        width: 100%;
+    }
 }
 
 /* media query for larger devices*/
@@ -166,6 +265,16 @@
         text-align: center;
     }
     .banner-img{
+        width: 100%;
+    }
+    .card-content{
+        
+        grid-template-columns: repeat(3,1fr);
+       
+    
+    }
+   
+    .cards img{
         width: 100%;
     }
 }
