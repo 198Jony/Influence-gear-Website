@@ -103,3 +103,20 @@
 .banner-btn-icon{
     margin-left: 5px;  
 }
+
+/* Responsive Media Query */
+
+@media screen and (max-width:576px){
+    .navbar,.navbar-list{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-list{
+        margin-top: 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+}
